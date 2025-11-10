@@ -1,0 +1,443 @@
+:root {
+  --fondo-principal: #FFF8E7;
+  --rojo-chile: #C1121F;
+  --verde-nopal: #007F5F;
+  --marron-texto: #3E2723;
+  --amarillo-maiz: #F9C74F;
+}
+
+/* ===== BOX-SIZING GLOBAL ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Tipografía personalizada */
+@font-face {
+  font-family: 'Mayan';
+  src: url('Mayan.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--fondo-principal);
+  color: var(--marron-texto);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: var(--rojo-chile);
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+}
+
+header h1 {
+  font-family: 'Mayan', cursive;
+  font-size: 2.8em;
+  margin: 0;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  background-color: var(--verde-nopal);
+  padding: 0.8em;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a.activo {
+  color: var(--amarillo-maiz);
+}
+
+/* ===== SECCIONES ===== */
+section {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ===== INTRO ===== */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 3px solid var(--amarillo-maiz);
+  border-radius: 15px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.intro-img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.intro-text {
+  max-width: 500px;
+}
+
+/* ===== FORMULARIOS ===== */
+form {
+  background-color: white;
+  border: 2px solid var(--amarillo-maiz);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+.platillo form {
+  max-width: 100%; /* Ajusta el formulario dentro del contenedor del platillo */
+}
+
+form label {
+  font-weight: bold;
+}
+
+input, textarea, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Botones */
+button {
+  background-color: var(--verde-nopal);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--amarillo-maiz);
+  color: var(--marron-texto);
+}
+
+/* ===== PLATILLOS ===== */
+.lista-platillos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.platillo {
+  background: white;
+  border: 3px solid var(--verde-nopal);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 350px;
+}
+
+.platillo h3 {
+  font-family: 'Mayan', cursive;
+  color: var(--rojo-chile);
+}
+
+.imagen-platillo {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.ok {
+  color: var(--verde-nopal);
+}
+
+.error {
+  color: var(--rojo-chile);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--rojo-chile);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+  .intro {
+    flex-direction: column;
+  }
+  .intro-img {
+    width: 90%;
+  }
+}
+:root {
+  --fondo-principal: #FFF8E7;
+  --rojo-chile: #C1121F;
+  --verde-nopal: #007F5F;
+  --marron-texto: #3E2723;
+  --amarillo-maiz: #F9C74F;
+}
+
+/* ===== BOX-SIZING GLOBAL ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Tipografía personalizada */
+@font-face {
+  font-family: 'Mayan';
+  src: url('Mayan.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--fondo-principal);
+  color: var(--marron-texto);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: var(--rojo-chile);
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+}
+
+header h1 {
+  font-family: 'Mayan', cursive;
+  font-size: 2.8em;
+  margin: 0;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  background-color: var(--verde-nopal);
+  padding: 0.8em;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a.activo {
+  color: var(--amarillo-maiz);
+}
+
+/* ===== SECCIONES ===== */
+section {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ===== INTRO ===== */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 3px solid var(--amarillo-maiz);
+  border-radius: 15px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.intro-img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.intro-text {
+  max-width: 500px;
+}
+
+/* ===== FORMULARIOS ===== */
+form {
+  background-color: white;
+  border: 2px solid var(--amarillo-maiz);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+.platillo form {
+  max-width: 100%; /* Ajusta el formulario dentro del contenedor del platillo */
+}
+
+form label {
+  font-weight: bold;
+}
+
+input, textarea, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Botones */
+button {
+  background-color: var(--verde-nopal);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--amarillo-maiz);
+  color: var(--marron-texto);
+}
+
+/* ===== PLATILLOS ===== */
+.lista-platillos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.platillo {
+  background: white;
+  border: 3px solid var(--verde-nopal);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 350px;
+}
+
+.platillo h3 {
+  font-family: 'Mayan', cursive;
+  color: var(--rojo-chile);
+}
+
+.imagen-platillo {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.ok {
+  color: var(--verde-nopal);
+}
+
+.error {
+  color: var(--rojo-chile);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--rojo-chile);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+  .intro {
+    flex-direction: column;
+  }
+  .intro-img {
+    width: 90%;
+  }
+}
+
+/* ===== CARRUSEL DE IMÁGENES ===== */
+#carrusel-seccion {
+    /* Mantenemos el estilo de sección, pero con un padding extra o ajuste si es necesario */
+    padding: 20px 0; /* Ajusta el padding vertical si es necesario */
+}
+
+.carrusel-contenedor {
+    position: relative;
+    max-width: 480px; /* Ancho máximo del carrusel */
+    height: 300px;
+    margin: 20px auto;
+    overflow: hidden; /* **Oculta las imágenes que están fuera de la vista** */
+    border: 5px solid var(--rojo-chile);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carrusel-imagenes {
+    display: flex;
+    transition: transform 0.8s ease-in-out; /* Animación de transición suave */
+    width: 900px; /* Si son 4 imágenes, el ancho total es 400% (4 * 100%) */
+}
+
+.carrusel-img {
+    width: 25%; /* Cada imagen toma un cuarto (100% / 4) del ancho total del contenedor flex */
+    height: auto;
+    display: block;
+    /*object-fit: cover;  Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+/* Botones de navegación 
+.carrusel-boton {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: none;
+    z-index: 10;
+}*/
+
+
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+}
